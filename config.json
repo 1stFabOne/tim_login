@@ -1,0 +1,7 @@
+{
+    "db_url": "mongodb://localhost:27017",
+    "db_database": "altv",
+    "db_collections": ["accounts"],
+    "db_username": null,
+    "db_password": null
+}
