@@ -22,6 +22,7 @@ npm install dotenv
 npm install download
 npm install express
 npm install sjcl
+npm install discord-webhook-node
 ```
 
 Danach musst du in deine `server.cfg` folgenden Name hinzufügen. Es muss der gleiche sein!
