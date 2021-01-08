@@ -4,6 +4,11 @@ import { MSGS } from './messages';
 import * as sm from 'simplymongo';
 import { encryptPassword, verifyPassword } from './passwort';
 import chalk from 'chalk';
+const { Webhook, MessageBuilder } = require('discord-webhook-node');
+const config = require("../config.json");
+const hook = new Webhook(config.webhook);
+const profilbild = config.profilbild;
+const webhookname = config.webhookname;
 
 const db = sm.getDatabase();
 
@@ -57,6 +62,25 @@ async function handleLogin(player, username, password) {
 
     if (!verifyPassword(password, accounts[0].password)) {
         alt.emitClient(player, 'auth:Error', MSGS.INCORRECT);
+        return;
+    }
+
+    if (config.webhookaktiv = true) {
+        const embed = new MessageBuilder()
+            embed.setTitle('Neuer Benutzer')
+            embed.setAuthor(config.servername, profilbild)
+            embed.setURL(config.websiteurl)
+            embed.addField('Benutzername', username, true)
+            embed.addField('E-Mail', email, true)
+            embed.addField('Ingame ID', id, true)
+            embed.setColor('#00b0f4')
+            embed.setThumbnail(profilbild)
+            embed.setFooter('Login System by TutoHacks', 'https://cdn.discordapp.com/avatars/595212497821368330/5f34a4702c5cdbe6418aa70e15eaa125.png?size=128')
+            embed.setTimestamp();
+        hook.setUsername(webhookname);
+        hook.setAvatar(profilbild);
+        hook.send(embed);
+        alt.emit('auth:Done', player, accounts[0]._id.toString(), accounts[0].username, accounts[0].email);
         return;
     }
 
