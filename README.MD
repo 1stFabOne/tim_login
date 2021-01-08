@@ -1,8 +1,15 @@
 # alt:V - Login System für AltV
 
-[❤️ Spende mir für meine Arbeite](https://github.com/sponsors/TutoHacks/)
-
 ⭐ Dieses Script ist easy to use und aktiv in entwicklung!
+
+# Zum originalen Script
+
+https://github.com/Stuyk/altv-os-auth
+
+# Was wurde hinzugefügt?
+
+-   Es wurde auf Deutsch übersetzt
+-   Es wurde ein Discord Log eingefügt
 
 # Was brauche ich?
 
