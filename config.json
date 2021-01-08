@@ -4,7 +4,7 @@
     "db_collections": ["accounts"],
     "db_username": null,
     "db_password": null,
-    "webhookaktiv": true,
+    "webhookaktiv": "true",
     "webhook": "DEIN WEBHOOK",
     "profilbild": "DAS PROFILBILD VON DEINEM WEBHOOK",
     "webhookname": "BENUTZER NAME DEINES WEBHOOKS",
