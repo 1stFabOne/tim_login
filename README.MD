@@ -47,6 +47,12 @@ Und füge deine Informationen ein.
     "db_database": "altv",
     "db_collections": ["accounts"],
     "db_username": null,
-    "db_password": null
+    "db_password": null,
+    "webhookaktiv": true,
+    "webhook": "DEIN WEBHOOK",
+    "profilbild": "DAS PROFILBILD VON DEINEM WEBHOOK",
+    "webhookname": "BENUTZER NAME DEINES WEBHOOKS",
+    "websiteurl": "SERVER WEBSITE URL",
+    "servername": "SERVERNAME"
 }
 ```
