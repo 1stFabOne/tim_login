@@ -6,7 +6,7 @@
 
 # Was brauche ich?
 
-**Bevor du mich kontaktierst stelle sicher das du NoeJS 13+ hast. Da ich schon so oft gefragt wurde.**
+**Bevor du mich kontaktierst stelle sicher das du NodeJS 13+ hast. Da ich schon so oft gefragt wurde.**
 
 -   [NodeJS 13+](https://nodejs.org/en/download/current/)
 -   Einen existierenden Server
